@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form action="http://localhost:5000/api/auth/verify-email" method="post">
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" />
+			<label for="code">Verification Code</label>
+			<input name="code" max="6" min="6" id="code" type="text" />
+			<input type="submit" />
+		</form>
+	</body>
+</html>

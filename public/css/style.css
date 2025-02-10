@@ -1,0 +1,51 @@
+:root {
+	--primary-color: #ffffff;
+	--text-color: #f7f3f3;
+	--text-2-color: #000000;
+	--secondary-color: #bfb1b1;
+	--secondary-2-color: #1e90ff;
+	--star-color: #ffad33;
+	--btn-color: #00ff66;
+	--hover-btn-color: #e07575;
+
+	--fs-small: 11px;
+	--fs-small-xl: 12px;
+	--fs-small-xxl: 14px;
+	--fs-medium: 16px;
+	--fs-medium-xl: 20px;
+	--fs-medium-xxl: 24px;
+	--fs-large: 36px;
+	--fs-large-xl: 48px;
+
+	--main-opacity: 0.5;
+}
+
+button {
+	border-radius: 3px !important;
+	font-size: var(--fs-small-xxl) !important;
+}
+input,
+select,
+textarea {
+	border-radius: 3px !important;
+	font-size: var(--fs-small-xxl) !important;
+}
+.custom-select {
+	max-width: 110px;
+	border-radius: 3px 0 0 3px !important;
+}
+input:focus,
+textarea:focus,
+select:focus {
+	border-color: var(--secondary-color) !important;
+	box-shadow: 0 0 0 0.1rem var(--secondary-2-color) !important;
+}
+
+.bg-primary {
+	background-color: var(--secondary-2-color) !important;
+}
+@media (max-width: 768px) {
+	.custom-offcanvas {
+		width: 78% !important;
+	}
+}
