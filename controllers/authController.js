@@ -37,7 +37,7 @@ exports.register = async (req, res) => {
 			expiresIn: "1h",
 		});
 
-		const verificationLink = `${process.env.FRONTEND_URL}/verify-email?token=${token}`;
+		const verificationLink = `${process.env.FRONTEND_URL}/auth/verify-email?token=${token}`;
 
 		const newUnverifiedUser = new UnverifiedUser({
 			name,
@@ -225,7 +225,7 @@ exports.forgetPassword = async (req, res) => {
 			expiresIn: "1h",
 		});
 
-		const url = `${process.env.FRONTEND_URL}/reset-password/${token}`;
+		const url = `${process.env.FRONTEND_URL}/auth/reset-password/${token}`;
 		const transporter = nodemailer.createTransport({
 			service: "Gmail",
 			auth: {
